@@ -95,7 +95,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7688d3edd68e17498144c9e9e310014, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 12
+  speed: 10
+  health: 100
+  bounty: 50
+  deathEffect: {fileID: 1075665026964420, guid: 4a940094d0511bf4387f1b86e01af6fd,
+    type: 2}
 --- !u!135 &135008621909211306
 SphereCollider:
   m_ObjectHideFlags: 1
