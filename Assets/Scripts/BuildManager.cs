@@ -19,7 +19,10 @@ public class BuildManager : MonoBehaviour {
     public GameObject buildEffect;
 
     private TurretBlueprint turretToBuild;
+    private Node selectedNode;
 
+
+    //Revist CanBuild
     public bool CanBuild { get { return turretToBuild != null; } }
     public bool HasMoney { get { return PlayerStats.Money >= turretToBuild.cost; } }    
 
@@ -42,9 +45,16 @@ public class BuildManager : MonoBehaviour {
         Debug.Log("Turret built. Money Left" + PlayerStats.Money);
     }
 
+    public void SelectNode(Node node)
+    {
+        selectedNode = node;
+        turretToBuild = null;
+    }
+
     public void SelectTurretToBuild (TurretBlueprint turret)
     {
         turretToBuild = turret;
+        selectedNode = null;
     }
 
 }
