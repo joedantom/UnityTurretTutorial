@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityTurretTutorial", "UnityTurretTutorial.csproj", "{54627A63-87A4-9FE9-F0C7-D0FB3B540E02}"
 EndProject
 Global
